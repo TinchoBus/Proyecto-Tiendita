@@ -1,0 +1,283 @@
+ejemplo 1
+
+// Arreglo de productos de dieta con nombre y precio
+const productos = [
+  { nombre: "Manzana", precio: 1.5 },
+  { nombre: "Plátano", precio: 2 },
+  { nombre: "Lechuga", precio: 1 },
+  { nombre: "Pechuga de pollo", precio: 5 },
+  // Añade más productos según sea necesario
+];
+
+// Función para sumar los precios de los productos
+function sumarPrecios(productos) {
+  let total = 0;
+  for (let i = 0; i < productos.length; i++) {
+    total += productos[i].precio;
+  }
+  return total;
+}
+
+// Función para restar los precios de los productos
+function restarPrecios(productos) {
+  let total = 0;
+  for (let i = 0; i < productos.length; i++) {
+    total -= productos[i].precio;
+  }
+  return total;
+}
+
+// Ejemplo de uso: Sumar los precios de los productos
+console.log("Total a pagar por los productos:", sumarPrecios(productos));
+
+// Ejemplo de uso: Restar los precios de los productos
+console.log("Total a pagar por los productos con descuento:", restarPrecios(productos));
+
+*******************************************************************************************
+
+ejemplo 2 HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Precios</title>
+</head>
+<body>
+  <h1>Calculadora de Precios</h1>
+  <label for="accion">Seleccione una acción:</label>
+  <select id="accion">
+    <option value="sumar">Sumar</option>
+    <option value="restar">Restar</option>
+  </select>
+  <button onclick="calcular()">Calcular</button>
+  <p id="resultado">El resultado se mostrará aquí.</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+ejemplo 3 js
+// Arreglo de productos de dieta con nombre y precio
+const productos = [
+  { nombre: "Manzana", precio: 1.5 },
+  { nombre: "Plátano", precio: 2 },
+  { nombre: "Lechuga", precio: 1 },
+  { nombre: "Pechuga de pollo", precio: 5 },
+  // Añade más productos según sea necesario
+];
+
+// Función para sumar los precios de los productos
+function sumarPrecios() {
+  let total = 0;
+  for (let i = 0; i < productos.length; i++) {
+    total += productos[i].precio;
+  }
+  return total;
+}
+
+// Función para restar los precios de los productos
+function restarPrecios() {
+  let total = 0;
+  for (let i = 0; i < productos.length; i++) {
+    total -= productos[i].precio;
+  }
+  return total;
+}
+
+// Función para calcular y mostrar el resultado
+function calcular() {
+  const accion = document.getElementById('accion').value;
+  let resultado;
+
+  if (accion === 'sumar') {
+    resultado = sumarPrecios();
+  } else {
+    resultado = restarPrecios();
+  }
+
+  document.getElementById('resultado').innerText = `Total: $${resultado.toFixed(2)}`;
+}
+**********************************************************************************************
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Tiendita Integrar</title>
+    <link rel="stylesheet" href="tiendita logo 2.jpeg" type="image_logo">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="caja">
+        
+         
+    <nav>
+       
+        <ul>
+            <li> <a href="index.html">Principal </a></li>
+            <li><a href="productos.html">productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <link href="https: //fonts.googleapis.com/css2? family= Montserrat:wght@300 & family= Open+Sans:ital,wght@0,400;0,700;1,300 & display=swap" rel="stylesheet">
+        </ul>
+
+    </nav>
+
+</div>
+
+
+
+    <div class="contenedor">
+        <header class="cabecero">
+            <h1> <img src="tiendita logo 1.jpeg" alt="logo-del-creador" class="imagen__logo"> </h1>
+           
+            <h1>Bienvenidos a Integrar Tiendita Saludable</h1>
+            <h2>La tiendita esta ubicada en el corazon del barrio Alto Alberdi, <strong>Integrar Tiendita Saludable.</strong> Fundada en el año 2020, nuestra labor es garantizar la alimentacion saludable en la ciudad y la conquista nuevos clientes diariamente. <h2>
+                <p id="mision"> <em>  Nuestra misión es:  <strong > "Proporcionar autoestima y calidad de vida a nuestros clientes". </strong> </em> </p>
+                <p> Ofrecemos la atención profesionalizada de personas que están constantemente observando los cambios en la alimentación y movimiento en el mundo de los cuidados corporales, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
+
+        </header>
+        <section class="mapa">
+            <h3 class="titulo-principal">Nuestra Ubicación</h3>
+                <p> Nuestro establecimiento esta ubicado en el corazon de la ciudad </p>
+
+                <div class="mapa-contenido">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27241.7414729746!2d-64.2056192!3d-31.408128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1706132179928!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+              
+        </section>
+
+        <section class="diferenciales">
+
+            <h3 class="titulo-principal">Qué nos caracteriza</h3>
+                
+            <div class="contenido-diferenciales">
+                <ul class="lista-diferenciales">
+                    <li class="items">-Atencion profesionalizada a nuestros clientes</li>
+                    <li class="items"> -Asesoramiento integral </li>
+                    <li class="items"> -Localización </li>
+                    <li class="items"> -Puntualidad </li>
+                    <li class="items"> -Limpieza </li>
+                </ul>
+            </div>
+                            
+        </section>    
+
+    </div>
+    
+</body>
+</html>
+
+***********************************************************************************
+css
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F0F0F0;
+  }
+  .caja{
+    text-align: justify;
+    text-shadow:chartreuse;
+    object-fit: contain;
+    height: 200px;
+    width: 100px;
+    filter: drop-shadow(3px 3px 20px white);
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 50px 70px 10px;      
+    background-size: auto;
+    filter: drop-shadow(3px 3px 20px white);
+  }
+  
+
+   
+    nav {
+      position: absolute;
+      top: 110px;
+      right: 0;
+    }
+    
+    nav ul {
+      list-style-type: none; /* Quita los puntos de lista */
+      margin: 0;
+      padding: 0;
+      width: 1000px;
+      height: 500px;
+      
+    }
+    
+    nav ul li {
+      display: inline;
+    margin: 0 0 0 15px;
+    }
+    
+    nav ul li a {
+      text-decoration: solid; /* Quita el subrayado de los enlaces */
+      padding: 10px 20px; /* Espaciado interno del enlace */
+      border: 1px solid #ccc; /* Borde del enlace */
+      border-radius: 10px; /* Bordes redondeados */
+      color: darkviolet; /* Color del texto */
+      font-size: 25px; /* Tamaño del texto */
+    }
+
+    nav a{
+
+      text-transform: uppercase;
+      color: #000000;
+      font-weight: bold;
+      font-size: 22px;
+      text-decoration: none;
+      
+  }
+    
+    nav ul li a:hover {
+      background-color: chartreuse; /* Cambia el color de fondo al pasar el ratón */
+    }
+
+    nav a:hover{
+
+      color: #C78c19;
+      text-decoration: underline;
+   }  
+      
+
+  .contenedor {
+    width: 100%;
+    height: 50px; /* Altura de tu contenedor */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  .imagen__logo{
+    margin-top: 50px; /* Ajusta este valor según tu preferencia para mover la imagen hacia arriba */
+    margin-left: 50px; 
+
+  }
+ 
+  #mision{
+    
+    height: 100px;
+    color:orangered;
+
+  }
+  #mision:hover {
+       
+    color: #990e0e;
+    font-size: 1.90rem;
+    font-weight: 400px;
+  }  
+  .mapa-contenido{
+    margin-top: 50px; /* Ajusta este valor según tu preferencia para mover la imagen hacia arriba */
+    margin-left: 50px;
+
+  } 

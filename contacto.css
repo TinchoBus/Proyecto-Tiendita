@@ -1,0 +1,28 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(230, 175, 73);
+  }
+
+button{
+    color:rgb(211, 0, 98);
+    background-color: blue;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    
+
+    
+  }
+  button:hover {
+    background: transparent;
+    color: #ee0a87;
+    box-shadow: 0 0 25px #390b758c;
+  }
+  
+
+.contenedor-imagen img{   /* tamaño de imagen */
+  width: 15%;
+
+}
+
+
