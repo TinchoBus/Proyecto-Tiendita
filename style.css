@@ -78,21 +78,24 @@ nav a:hover{
   font-weight: bold;
 
 }
-p{
+span{
   text-align: center;
-  font-size: 30px;
+  font-size: 15px;
   font-weight: bold;
 
 }
 #mision{
   
-  color:#000000;
+  color:#050b5a;
 
 }
 #mision:hover {
        
   background: darkorange;
-  transform: scale(1.2);
+  font-size: 15px;
+  font-weight: bold;
+
+  
 }
 br{
   margin-top: 50px;
@@ -138,4 +141,12 @@ video {
   animation: none; 
 
 
+}
+.footer__rodape{
+  text-align: center;
+  font-size: 18px;
+  margin: 35px; /* para desplazar hacia abajo una linea*/
+  color: darkblue;
+  font-weight: bolder;
+   
 }

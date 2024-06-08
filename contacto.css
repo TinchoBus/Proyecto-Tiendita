@@ -24,5 +24,13 @@ button{
   width: 15%;
 
 }
+.footer__rodape{
+  text-align: center;
+  font-size: 18px;
+  margin: 35px; /* para desplazar hacia abajo una linea*/
+  color: darkblue;
+  font-weight: bolder;
+   
+}
 
 
